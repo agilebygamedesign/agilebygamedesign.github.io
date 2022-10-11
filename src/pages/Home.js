@@ -18,6 +18,48 @@ export class HomePage {
                         ]),
                     ]),
                 ]),
+                m(".row", [
+                    m(".col-xs-12.col-sm-6.col-lg-3", [
+                        m(".card", {style: "margin-top: 5px; margin-bottom: 5px;"}, [
+                            m(".card-body", [
+                                m("h5.card-title", "User or Actor"),
+                                m("p.card-text", "Users are Actores in Game Play"),
+                            ]),
+                        ]),
+                    ]),
+                    m(".col-xs-12.col-sm-6.col-lg-3", [
+                        m(".card", {style: "margin-top: 5px; margin-bottom: 5px;"}, [
+                            m(".card-body", [
+                                m("h5.card-title", "User Story"),
+                                m("p.card-text", "User Story is an Actor skill"),
+                            ]),
+                        ]),
+                    ]),
+                    m(".col-xs-12.col-sm-6.col-lg-3", [
+                        m(".card", {style: "margin-top: 5px; margin-bottom: 5px;"}, [
+                            m(".card-body", [
+                                m("h5.card-title", "Features"),
+                                m("p.card-text", "Scene is a small Feature"),
+                            ]),
+                        ]),
+                    ]),
+                    m(".col-xs-12.col-sm-6.col-lg-3", [
+                        m(".card", {style: "margin-top: 5px; margin-bottom: 5px;"}, [
+                            m(".card-body", [
+                                m("h5.card-title", "Level"),
+                                m("p.card-text", ""),
+                            ]),
+                        ]),
+                    ]),
+                    m(".col-xs-12.col-sm-6.col-lg-3", [
+                        m(".card", {style: "margin-top: 5px; margin-bottom: 5px;"}, [
+                            m(".card-body", [
+                                m("h5.card-title", "Game as World Game"),
+                                m("p.card-text", ""),
+                            ]),
+                        ]),
+                    ]),
+                ]),
             ]),
         ])
     }
