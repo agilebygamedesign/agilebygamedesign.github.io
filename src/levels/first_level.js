@@ -14,13 +14,16 @@ import { PageFooter } from "../components/page_footer"
  * */
 import { CardUser } from "../components/card_user"
 import { CardUserStory } from "../components/card_user_story"
+import { CardLevel } from "../components/card_level"
 
 /**
  * First Level class
  * */
 export class FirstLevel extends Level {
     
-    constructor(vnode) {}
+    constructor(vnode) {
+        super()
+    }
     
     view(vnode) {
         return m(".page", [
@@ -30,7 +33,6 @@ export class FirstLevel extends Level {
                     m(".col-xs-12.col-sm-6.col-lg-3", [
                         m(CardUser)
                     ]),
-                    
                     m(".col-xs-12.col-sm-6.col-lg-3", [
                         m(CardUserStory)
                     ]),
@@ -43,7 +45,7 @@ export class FirstLevel extends Level {
                         ]),
                     ]),
                     m(".col-xs-12.col-sm-6.col-lg-3", [
-                        m(CardLevel)
+                        m(CardLevel),
                     ]),
                     m(".col-xs-12.col-sm-6.col-lg-3", [
                         m(".card", {style: "margin-top: 5px; margin-bottom: 5px;"}, [

@@ -3,7 +3,9 @@ import {Actor} from "./actor"
 
 
 export class CashierActor extends Actor {
-    
+    constructor(){
+        super()
+    }
     greetThePerson(){}
     informPaymentMethods(){}
     requestAPaymentMethod(){}
