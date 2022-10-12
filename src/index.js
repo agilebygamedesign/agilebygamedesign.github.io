@@ -1,6 +1,6 @@
 import m from "mithril"
 
-import { HomePage } from "./pages/Home"
+import { FirstLevel } from "./levels/first_level"
 import { ActorDocPage } from "./docs/actor"
 import { UserStoryDocPage } from "./docs/user_story"
 
@@ -16,7 +16,7 @@ import { CartPage } from "./pages/Cart"
 var root = document.body
 
 m.route(root, "/", {
-    "/": HomePage,
+    "/": FirstLevel,
     "/docs/actors": ActorDocPage,
     "/docs/user-stories": UserStoryDocPage,
     /*

@@ -1,4 +1,3 @@
-
 import m from "mithril"
 
 export class ActorDocPage {
@@ -14,6 +13,7 @@ export class ActorDocPage {
                     ]),
                     m(".col-12", [
                         m("h2", "User or Actor"),
+                        m("img", {src: "static/images/actors/actors_example.png", width: "90%", height: "90%", style: "display: block; margin: 0 auto;"}),
                         m("p", "Coming Soon"),
                     ]),
                 ])

@@ -1,4 +1,3 @@
-
 import m from "mithril"
 
 export class PageHeader {

@@ -1,5 +1,7 @@
 
-class Actor {
+
+export class Actor {
     constructor(){}
 }
+
 
