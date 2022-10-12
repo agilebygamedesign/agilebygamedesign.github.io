@@ -2,8 +2,7 @@ import m from "mithril"
 import {Actor} from "./actor"
 
 
-export class CashierActor
-    extends Actor {
+export class CashierActor extends Actor {
     
     greetThePerson(){}
     informPaymentMethods(){}
