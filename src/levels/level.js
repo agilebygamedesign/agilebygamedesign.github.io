@@ -1,4 +1,4 @@
-import { Actor } from "../actors/actor"
+import { Actor } from "../players/actor"
 
 
 export class Level {

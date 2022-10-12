@@ -1,6 +1,16 @@
 import m from "mithril"
-
 import { Level } from "./level"
+
+/**
+ * Missions
+ * https://github.com/cxong/cdogs-sdl/tree/master/missions
+ * **/
+
+/**
+ * Actors of Level
+ * **/
+import { SalesmanActor } from "../players/salesman_actor"
+import { VisitorActor } from "../players/visitor_actor"
 
 /**
  * Level Layout Components
@@ -12,12 +22,10 @@ import { PageFooter } from "../components/page_footer"
 /**
  * Content Layout Components
  * */
-import { CardUser } from "../components/card_user"
-import { CardUserStory } from "../components/card_user_story"
-import { CardComponent } from "../components/card_component"
-import { CardScenario} from "../components/card_scenario"
-import { CardLevel } from "../components/card_level"
-import { CardGameWorld } from "../components/card_game_world"
+import { HallScene } from "../scenes/hall_scene"
+import { CustomerScene } from "../scenes/customer_scene"
+import { ShoppingCartScene } from "../scenes/shopping_cart_scene"
+import { CashierSectionScene } from "../scenes/cashier_section_scene"
 
 /**
  * First Level class
@@ -26,37 +34,24 @@ export class FirstLevel extends Level {
     
     constructor(vnode) {
         super()
+        this.salesmanActor = SalesmanActor()
+        this.visitorActor = VisitorActor()
+        this.scenes = {
+            hall: HallScene,
+            customer: CustomerScene,
+            cart: ShoppingCartScene,
+            cashier: CashierSectionScene,
+        }
     }
     
     view(vnode) {
         return m(".page", [
             m(".container", [
-                m(".row", [
+                m(".row", {style: "padding-top: 20px; padding-bottom: 20px;"}, [
                     m(PageHeader),
                 ]),
             ]),
-            m(".container", [
-                m(".row", [
-                    m(".col-xs-12.col-sm-6.col-lg-3", [
-                        m(CardUser),
-                    ]),
-                    m(".col-xs-12.col-sm-6.col-lg-3", [
-                        m(CardUserStory),
-                    ]),
-                    m(".col-xs-12.col-sm-6.col-lg-3", [
-                        m(CardComponent),
-                    ]),
-                    m(".col-xs-12.col-sm-6.col-lg-3", [
-                        m(CardScenario),
-                    ]),
-                    m(".col-xs-12.col-sm-6.col-lg-3", [
-                        m(CardLevel),
-                    ]),
-                    m(".col-xs-12.col-sm-6.col-lg-3", [
-                        m(CardGameWorld),
-                    ]),
-                ]),
-            ]),
+            m(this.scenes.hall),
             m(PageFooter),
         ])
     }

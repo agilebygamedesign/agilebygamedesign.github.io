@@ -6,11 +6,7 @@ export class PageFooter {
         return m(".container", [
             m(".row", [
                 m(".col-12", [
-                    m("p.small.text-center", [
-                        "proposed by ",
-                        m("a", {href: "https://felipebastosweb.github.io", target: "_blank"}, "Felipe Augusto Bastos Moraes(@felipebastosweb)"),
-                        "."
-                    ]),
+                    m("p", "All rights reserved to AGD")
                 ]),
             ]),
         ])
