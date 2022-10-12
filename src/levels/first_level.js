@@ -14,7 +14,10 @@ import { PageFooter } from "../components/page_footer"
  * */
 import { CardUser } from "../components/card_user"
 import { CardUserStory } from "../components/card_user_story"
+import { CardComponent } from "../components/card_component"
+import { CardScenario} from "../components/card_scenario"
 import { CardLevel } from "../components/card_level"
+import { CardGameWorld } from "../components/card_game_world"
 
 /**
  * First Level class
@@ -28,32 +31,29 @@ export class FirstLevel extends Level {
     view(vnode) {
         return m(".page", [
             m(".container", [
-                m(PageHeader),
+                m(".row", [
+                    m(PageHeader),
+                ]),
+            ]),
+            m(".container", [
                 m(".row", [
                     m(".col-xs-12.col-sm-6.col-lg-3", [
-                        m(CardUser)
+                        m(CardUser),
                     ]),
                     m(".col-xs-12.col-sm-6.col-lg-3", [
-                        m(CardUserStory)
+                        m(CardUserStory),
                     ]),
                     m(".col-xs-12.col-sm-6.col-lg-3", [
-                        m(".card", {style: "margin-top: 5px; margin-bottom: 5px;"}, [
-                            m(".card-body", [
-                                m("h5.card-title", "Features"),
-                                m("p.card-text", "Scene is a small Feature"),
-                            ]),
-                        ]),
+                        m(CardComponent),
+                    ]),
+                    m(".col-xs-12.col-sm-6.col-lg-3", [
+                        m(CardScenario),
                     ]),
                     m(".col-xs-12.col-sm-6.col-lg-3", [
                         m(CardLevel),
                     ]),
                     m(".col-xs-12.col-sm-6.col-lg-3", [
-                        m(".card", {style: "margin-top: 5px; margin-bottom: 5px;"}, [
-                            m(".card-body", [
-                                m("h5.card-title", "Game as World Game"),
-                                m("p.card-text", "Coming soon"),
-                            ]),
-                        ]),
+                        m(CardGameWorld),
                     ]),
                 ]),
             ]),

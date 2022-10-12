@@ -8,7 +8,7 @@ export class CardUser {
                 m("h5.card-title", [
                     m("a", {href: "#!/docs/actors", target: "_blank"}, "User or Actor"),
                 ]),
-                m("p.card-text", "Users are Actors in Game Play"),
+                m("p.card-text", "Users are Actors ou Players in Game World"),
             ]),
         ])
     }

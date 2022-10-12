@@ -8,7 +8,7 @@ export class CardUserStory {
                 m("h5.card-title", [
                     m("a", {href: "#!/docs/user-stories", target: "_blank"}, "User Story"),
                 ]),
-                m("p.card-text", "User Story is an Actor skill"),
+                m("p.card-text", "User Stories describe how the Actor uses his abilities in part of the Game Scenario"),
             ]),
         ])
     }
