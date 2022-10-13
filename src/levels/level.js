@@ -16,7 +16,7 @@ export class Level {
         this.actors[actorName] = actorObject
     }
     
-    moveToScene(sceneName) {
+    static moveToScene(sceneName) {
         this.scene_active = sceneName
     }
 }

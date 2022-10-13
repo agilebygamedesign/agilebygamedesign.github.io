@@ -23,6 +23,7 @@ import { PageFooter } from "../components/page_footer"
  * Content Layout Components
  * */
 import { HallScene } from "../scenes/hall_scene"
+import { ActorScene } from "../scenes/actor_scene"
 import { CustomerScene } from "../scenes/customer_scene"
 import { ShoppingCartScene } from "../scenes/shopping_cart_scene"
 import { CashierSectionScene } from "../scenes/cashier_section_scene"
@@ -31,16 +32,15 @@ import { CashierSectionScene } from "../scenes/cashier_section_scene"
  * First Level class
  * */
 export class FirstLevel extends Level {
-    
+
+    static scene_active = m(HallScene)
+
     constructor(vnode) {
         super()
         
         //this.salesmanActor = new SalesmanActor()
         //this.visitorActor = new VisitorActor()
         
-        this.scenes = {}
-        
-        this.scene_active = "hallScene"
     }
 
     view(vnode) {
@@ -50,13 +50,10 @@ export class FirstLevel extends Level {
                     m(PageHeader),
                 ]),
             ]),
-            m(HallScene),
+            FirstLevel.scene_active,
             m(PageFooter),
         ])
     }
-}
-
-
     
     /*
     loadScene(sceneName, sceneObject) {
@@ -65,6 +62,9 @@ export class FirstLevel extends Level {
         switch(sceneName) {
             case "hallScene":
                 this.scene_active = m(HallScene)
+                break
+            case "actorScene":
+                this.scene_active = m(ActorScene)
                 break
             case "customerScene":
                 this.scene_active = m(CustomerScene)
@@ -80,5 +80,6 @@ export class FirstLevel extends Level {
         }
         return this.scene[sceneName]
     }
-        */
-    
+    */
+}
+

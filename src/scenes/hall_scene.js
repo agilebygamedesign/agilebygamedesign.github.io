@@ -36,7 +36,7 @@ export class HallScene extends Scene {
             m(".row", {style: "padding-top: 20px; padding-bottom: 20px;"}, [
                 m("h2", "Nunca mais desenvolva sistemas de maneira chata e confusa."),
                 m("p", [
-                    "Agora você pode fazer especificações de sistema no formato de elementos de jogo e abstrair código de forma mais realista.",
+                    "Agora você pode fazer especificações de sistema no formato de elementos de jogos e abstrair o código de forma mais realista.",
                 ]),
                 m("p", [ 
                     "Este site está sendo desenvolvimento usando elementos das Metodologias Ágeis e do Design de Jogos. ",
