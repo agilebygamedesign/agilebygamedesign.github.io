@@ -1,3 +1,4 @@
+import m from "mithril"
 import { Scene } from "./scene";
 
 
@@ -23,10 +24,13 @@ import { CustomerActor } from "../players/customer_actor"
  * Hall Scene
  * **/
 export class HallScene extends Scene {
+
     constructor() {
-        this.salesmanActor = SalesmanActor()
-        this.visitorActor = VisitorActor()
+        super()
+        //this.salesmanActor = SalesmanActor()
+        //this.visitorActor = VisitorActor()
     }
+
     view(vnode) {
         return m(".container", [
             m(".row", {style: "padding-top: 20px; padding-bottom: 20px;"}, [

@@ -34,16 +34,15 @@ export class FirstLevel extends Level {
     
     constructor(vnode) {
         super()
-        this.salesmanActor = SalesmanActor()
-        this.visitorActor = VisitorActor()
-        this.scenes = {
-            hall: HallScene,
-            customer: CustomerScene,
-            cart: ShoppingCartScene,
-            cashier: CashierSectionScene,
-        }
+        
+        //this.salesmanActor = new SalesmanActor()
+        //this.visitorActor = new VisitorActor()
+        
+        this.scenes = {}
+        
+        this.scene_active = "hallScene"
     }
-    
+
     view(vnode) {
         return m(".page", [
             m(".container", [
@@ -51,8 +50,35 @@ export class FirstLevel extends Level {
                     m(PageHeader),
                 ]),
             ]),
-            m(this.scenes.hall),
+            m(HallScene),
             m(PageFooter),
         ])
     }
 }
+
+
+    
+    /*
+    loadScene(sceneName, sceneObject) {
+        super.loadScene(sceneName, sceneObject)
+        
+        switch(sceneName) {
+            case "hallScene":
+                this.scene_active = m(HallScene)
+                break
+            case "customerScene":
+                this.scene_active = m(CustomerScene)
+                break
+            case "cartScene":
+                this.scene_active = m(ShoppingCartScene)
+                break
+            case "cashierScene":
+                this.scene_active = m(CashierSectionScene)
+                break
+            default: 
+                this.scene_active = m(HallScene);
+        }
+        return this.scene[sceneName]
+    }
+        */
+    

@@ -10,7 +10,7 @@ var root = document.body
 
 m.route(root, "/", {
     "/": FirstLevel,
-    "/customer": CustomerPanelLevel,
+    "/customers": CustomerPanelLevel,
     "/docs/actors": ActorDocPage,
     "/docs/user-stories": UserStoryDocPage
     

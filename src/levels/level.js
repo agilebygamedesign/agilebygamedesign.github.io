@@ -4,10 +4,20 @@ import { Actor } from "../players/actor"
 export class Level {
     constructor(){
         this.actors = {}
+        this.scenes = {}
+        this.scene_active = ""
     }
     
-    addActor(name, actor) {
-        this.actors[name] = actor
+    loadScene(sceneName, sceneObject) {
+        this.scenes[sceneName] = m(sceneObject)
+    }
+
+    addActor(actorName, actorObject) {
+        this.actors[actorName] = actorObject
+    }
+    
+    moveToScene(sceneName) {
+        this.scene_active = sceneName
     }
 }
 
