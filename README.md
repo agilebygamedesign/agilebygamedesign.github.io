@@ -1,5 +1,6 @@
 # agilebygamedesign.github.io
-Desenvolvimento Ágil de Software guiado pelo Design do Jogo 
+Desenvolvimento Ágil de Software guiado pelo Design de Jogo.
+- English
 Agile Software Development guided by Game Design
 
 ## Motivação
