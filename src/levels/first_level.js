@@ -55,31 +55,5 @@ export class FirstLevel extends Level {
         ])
     }
     
-    /*
-    loadScene(sceneName, sceneObject) {
-        super.loadScene(sceneName, sceneObject)
-        
-        switch(sceneName) {
-            case "hallScene":
-                this.scene_active = m(HallScene)
-                break
-            case "actorScene":
-                this.scene_active = m(ActorScene)
-                break
-            case "customerScene":
-                this.scene_active = m(CustomerScene)
-                break
-            case "cartScene":
-                this.scene_active = m(ShoppingCartScene)
-                break
-            case "cashierScene":
-                this.scene_active = m(CashierSectionScene)
-                break
-            default: 
-                this.scene_active = m(HallScene);
-        }
-        return this.scene[sceneName]
-    }
-    */
 }
 

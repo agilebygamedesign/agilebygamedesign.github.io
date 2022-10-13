@@ -13,6 +13,7 @@ export class CardUser {
             }, [
                 m("h5.card-title", "User or Actor"),
                 m("p.card-text", "Users are Actors ou Players in Game World"),
+                m("p.card-text", "Coming soon"),
             ]),
         ])
     }

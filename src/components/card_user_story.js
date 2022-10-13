@@ -13,6 +13,7 @@ export class CardUserStory {
             }, [
                 m("h5.card-title", "User Story"),
                 m("p.card-text", "User Stories describe how the Actor uses his abilities in part of the Game Scenario"),
+                m("p.card-text", "Coming soon"),
             ]),
         ])
     }

@@ -34,14 +34,14 @@ export class HallScene extends Scene {
     view(vnode) {
         return m(".container", [
             m(".row", {style: "padding-top: 20px; padding-bottom: 20px;"}, [
-                m("h2", "Nunca mais desenvolva sistemas de maneira chata e confusa."),
+                m("h2", "Never develop systems in a boring and confusing way again."),
                 m("p", [
-                    "Agora você pode fazer especificações de sistema no formato de elementos de jogos e abstrair o código de forma mais realista.",
+                    "Now you can make system specs in the form of game elements and abstract code more realistically.",
                 ]),
                 m("p", [ 
-                    "Este site está sendo desenvolvimento usando elementos das Metodologias Ágeis e do Design de Jogos. ",
-                    "Você pode acessar o ",
-                    m("a", {href: "https://github.com/agilebygamedesign/agilebygamedesign.github.io", target: "_blank"}, "código-fonte aqui"),
+                    "This site is being developed using elements of Agile Methodologies and Game Design. ",
+                    "You can access the ",
+                    m("a", {href: "https://github.com/agilebygamedesign/agilebygamedesign.github.io", target: "_blank"}, "source code here"),
                     "."
                 ]),
             ]),
