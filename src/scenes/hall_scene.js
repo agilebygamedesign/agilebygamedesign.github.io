@@ -47,21 +47,27 @@ export class HallScene extends Scene {
             ]),
             m(".row", [
                 m(".col-xs-12.col-sm-6.col-lg-3", [
+                    m("span.position-relative.top-0.start-10.translate-middle.badge.rounded-pill.bg-success", "1"),
                     m(CardUser),
                 ]),
                 m(".col-xs-12.col-sm-6.col-lg-3", [
+                    m("span.position-relative.top-0.start-10.translate-middle.badge.rounded-pill.bg-success", "2"),
                     m(CardUserStory),
                 ]),
                 m(".col-xs-12.col-sm-6.col-lg-3", [
+                    m("span.position-relative.top-0.start-10.translate-middle.badge.rounded-pill.bg-success", "3"),
                     m(CardComponent),
                 ]),
                 m(".col-xs-12.col-sm-6.col-lg-3", [
+                    m("span.position-relative.top-0.start-10.translate-middle.badge.rounded-pill.bg-success", "4"),
                     m(CardScenario),
                 ]),
                 m(".col-xs-12.col-sm-6.col-lg-3", [
+                    m("span.position-relative.top-0.start-10.translate-middle.badge.rounded-pill.bg-success", "5"),
                     m(CardLevel),
                 ]),
                 m(".col-xs-12.col-sm-6.col-lg-3", [
+                    m("span.position-relative.top-0.start-10.translate-middle.badge.rounded-pill.bg-success", "6"),
                     m(CardGameWorld),
                 ]),
             ]),
