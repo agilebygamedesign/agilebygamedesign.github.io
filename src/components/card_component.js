@@ -12,6 +12,7 @@ export class CardComponent {
                 },
             }, [
                 m("h5.card-title", "Components"),
+                m("p.card-text", "Components are a set of elements that make up the User Story Scenario whose purpose is to capture Actor interactions, receive and return data related to Game States at the current stage, and help Actors understand the objective of the Game."),
                 m("p.card-text", "Coming soon"),
             ]),
         ])
